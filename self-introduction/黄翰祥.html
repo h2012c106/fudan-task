@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人简介 - 黄翰祥</title>
+<!-- Bootstrap CSS from 字节跳动镜像 -->
+<link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* 淡灰色背景 */
+  }
+  .navbar {
+    background-color: #4a90e2 !important; /* 淡蓝色导航栏 */
+  }
+  .navbar-brand, .nav-link {
+    color: #ffffff !important;
+  }
+  .navbar-brand:hover, .nav-link:hover {
+    color: #cfe2ff !important; /* 淡蓝色高亮 */
+  }
+  @media (max-width: 767px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-nav .nav-item {
+      margin: 0;
+    }
+    .navbar-nav .nav-link {
+      padding: 0.5rem 0;
+    }
+  }
+  .section-content {
+    text-align: left; /* 内容居左 */
+  }
+  /* 为基本信息部分增加顶部间距 */
+  #basic-info {
+    padding-top: 50px; /* 调整这个值以适应固定导航栏的高度 */
+  }
+  h2 {
+    color: #4a90e2; /* 淡蓝色标题 */
+  }
+  footer {
+    background-color: #4a90e2; /* 淡蓝色页脚 */
+    color: #ffffff;
+  }
+  table.basic-info-table {
+    width: 100%;
+    max-width: 500px; /* 限制表格的最大宽度 */
+    border-collapse: collapse;
+  }
+  table.basic-info-table th, table.basic-info-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  table.basic-info-table th {
+    text-align: right;
+    font-weight: bold;
+  }
+  table.basic-info-table td {
+    text-align: left;
+  }
+  .basic-info-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .basic-info-cell {
+    width: 50%;
+  }
+</style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">黄翰祥 的个人主页</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#basic-info">基本信息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">教育背景</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work-experience">工作经历</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">主要项目</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="basic-info" class="my-5 section-content">
+    <div class="container">
+      <h2 class="mb-4">基本信息</h2>
+	  <ul>
+	    <li><b>姓名</b>: 黄翰祥</li>
+	    <li><b>性别</b>: 男</li>
+	    <li><b>年龄</b>: 28</li>
+	    <li><b>学历</b>: 本科</li>
+	    <li><b>电话</b>: 18916887007</li>
+	    <li><b>邮箱</b>: hanxiang.huang@qq.com</li>
+	    <li><b>英文水平</b>: CET-6 546分</li>
+	  </ul>
+    </div>
+  </section>
+
+  <section id="education" class="my-5 section-content">
+    <div class="container">
+      <h2 class="mb-4">教育背景</h2>
+      <h5>2012.09 - 2015.06 杨浦高级中学</h5>
+      <h5>2015.09 - 2019.06 北京邮电大学 计算机科学与技术</h5>
+    </div>
+  </section>
+
+  <section id="work-experience" class="my-5 section-content">
+    <div class="container">
+      <h2 class="mb-4">工作经历</h2>
+      <h4>2019.07 - 2021.06 小红书科技有限公司 Java开发工程师</h4>
+      <ul>
+        <li>负责离线与实时数据同步工具的开发与维护</li>
+        <li>负责数据同步、工具运维平台的搭建</li>
+      </ul>
+
+      <h4>2021.06 - 2023.07 蚂蚁集团CTO线 高级Java开发工程师</h4>
+      <ul>
+        <li>负责集团灰度平台、灰度能力的设计、开发与运维</li>
+      </ul>
+
+      <h4>2023.07 - 至今 上海银行金融科技部 开发经理</h4>
+      <ul>
+        <li>负责服务治理团队的日常人员、项目管理工作</li>
+        <li>负责行内RPC中间件、服务治理平台等能力的设计、开发</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="my-5 section-content">
+    <div class="container">
+      <h2 class="mb-4">主要项目</h2>
+      <h4>2020.04 - 2020.09 异构数据源离线导数工具</h4>
+      <p>本项目是一个完全自研的基于MapReduce与星型结构的异构数据源离线导数工具。优点包括但不限于：集群化横向扩展能力、流控能力、数据源模块间的星型结构、插件化开发/部署能力、依赖注入化的模块化开发框架、基于SQL语法的可下推的数据筛选器等等。</p>
+      <p>本人在此项目中负责牵头带领小团队进行产品开发工作。团队工作方面涵盖与组员的工作内容沟通、开发进度统筹以及向上级定期的工作汇报。具体实施方面本人承担了如下内容: 本项目所有的产品、技术架构设计工作；核心模块的代码实现与阶段性重构；后期产品推广、对接外部平台以及运维工作。</p>
+      <p>截至2021年6月，在小组的共同努力下，该工具已支持15种数据源，为公司内部导数平台替代了1条旧数据链路、新增了12条新数据链路，涉及近300个离线任务，部署于3家云厂商服务器上，每日承载流量达百亿行级别。本项目通过统一化导数工具、规范化导数姿势，达到大幅降低离线导数运维成本的目的，赋能于数仓业务、数据归档以及各种各样的业务需求。</p>
+
+      <h4>2021.06 - 2023.07 灰度平台</h4>
+      <p>本项目是集团内部对各种业务变更场景进行风险防控的重要产品，是技术部门“风险左移”目标中的关键一环。通过平台化、系统化的方案与能力落地集团内部各种重要变更的灰度化，保证变更执行缓步推进、变更影响逐步扩大；并且同时拉通各个三方能力，提供在变更过程中的风险发现、影响面探测能力，做到可观测、可发现、可拦截。</p>
+      <p>本人在团队中整体负责以下两个方向内容: 平台策略引擎的维护与优化，包括通用分批灰度能力、灰度风险检测流程、架构升级/重构，以及与集团内各变更平台的协调与沟通；通过多种手段多个维度，保障所有非发布类变更的风险，介入并降低此类变更带来的生产安全隐患。</p>
+      <p>其中，策略引擎侧——支撑全站（包括商业化站点）所有主流变更场景的高度可配置化的分批、风险检测诉求；通过架构优化与重构，在风险控制保证不变的情况下，全站发布类变更对比22年全年提效40.52%。非发布类风险防控侧——针对动态配置型变更防控，在22年下半年达到44.62%事件拦截率，相比能力未铺面阶段，在拦截噪音控制范围内，每百个风险多拦截近20个事件。</p>
+  </section>
+
+  <footer class="text-center py-3">
+    <p>版权所有 &copy; 2024 黄翰祥. 保留所有权利。</p>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js from 字节跳动镜像 -->
+  <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/2.11.2/umd/popper.min.js"></script>
+  <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
